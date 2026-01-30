@@ -12,7 +12,7 @@ function DrawingPrompts() {
         console.log("haal prompts op");
 
         try {
-            const response = await fetch("http://localhost:8000/drawingprompts", {//await kan alleen met async
+            const response = await fetch("http://localhost:8000/drawingprompts/", {//await kan alleen met async
                 method: "GET",
                 headers: {
                     Accept: "application/json",

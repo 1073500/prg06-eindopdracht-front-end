@@ -21,7 +21,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/drawingprompts/create",
-                element: <Create />,
+                element: <Create drawingPromptAdded={() => console.log("Prompt toegevoegd!")} />,
             },
 
             {
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
 
             {
                 path: "/drawingprompts/:id/edit",
-                element: <Edit />,
+                element: <Edit drawingPromptAdded={() => console.log("Prompt aangepast!")} />,
             },
         ],
     },
@@ -41,6 +41,7 @@ const router = createBrowserRouter([
 
 function App() {
     return <RouterProvider router={router} />;
+
 }
 
 export default App;

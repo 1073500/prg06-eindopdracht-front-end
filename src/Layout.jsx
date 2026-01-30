@@ -5,7 +5,6 @@ function Layout() {
         <div>
             <header>
                 <nav className="bg-green-800 text-white font-bold p-4 flex justify-evenly">
-                    <Link to={`/`}>List</Link>
                     <Link to={`/drawingprompts`}>Drawing prompt</Link>
                     <Link to={`drawingprompts/create`}>Create a Prompt!</Link>
                 </nav>

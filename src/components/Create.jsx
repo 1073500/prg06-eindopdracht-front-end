@@ -20,7 +20,7 @@ function Create({drawingPromptAdded}) {
     async function handleSubmit(e) {
         e.preventDefault()
         try {
-            const response = await fetch("http://localhost:8000/drawingprompts", {
+            const response = await fetch("http://localhost:8000/drawingprompts/", {
                 method: "POST",
                 headers: {
                     Accept: "application/json",
